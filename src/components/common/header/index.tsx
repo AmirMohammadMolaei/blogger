@@ -22,11 +22,11 @@ export default function Header() {
   };
 
   return (
-    <div className="px-40 py-5 border-b flex items-center justify-between">
-      <Link href={"/"} className="font-Cinzel text-4xl">
+    <div className="max-sm:px-10 max-lg:px-20 px-40 py-5 border-b flex items-center justify-between">
+      <Link href={"/"} className="font-Cinzel text-4xl max-sm:text-3xl">
         Medium
       </Link>
-      <ul className="flex gap-x-4 items-center">
+      <ul className="flex gap-x-4 items-center max-md:hidden">
         {MenuLinks.map((item, index) =>
           item.type == "button" ? (
             <MenuLinksButtonItems key={index} item={item} />

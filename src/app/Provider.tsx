@@ -6,7 +6,7 @@ export default function Provider({ children }: { children: ReactNode }) {
   return (
     <Fragment>
       <Header />
-      <main className="px-40">{children}</main>
+      <main className="max-sm:px-10 max-lg:px-20 px-40">{children}</main>
       <Footer />
     </Fragment>
   );
