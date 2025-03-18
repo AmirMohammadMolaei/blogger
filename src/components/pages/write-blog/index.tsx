@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Editor = dynamic(() => import("../../common/editor-js"), {
   loading: () => (
-    <p className="!w-full min-w-[850px] min-h-96">Loading Editor...</p>
+    <p className="!w-full min-w-[850px] min-h-96">Create Editor...</p>
   ),
   ssr: false,
 });
@@ -37,7 +37,7 @@ const WriteBlogWrapper = () => {
           Draft by AmirMohammad-Molaei
         </span>
         <Button
-        size="md"
+          size="md"
           color="success"
           radius="full"
           className="font-Cinzel sm:py-0.5 sm:h-fit absolute top-6 right-0 max-sm:static max-sm:mt-5 max-sm:w-40"
