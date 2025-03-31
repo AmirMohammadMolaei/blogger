@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { Blogs } from "../data";
-import { SingleBlogType } from "../types";
+import { SingleBlogType } from "@/core/services/models/blogs-models";
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }

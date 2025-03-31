@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { NextRequest } from "next/server";
-import { SingleBlogType } from "./types";
+import { SingleBlogType } from "@/core/services/models/blogs-models";
 import { CheckFieldParams } from "@/core/utilities/check-field-params";
 import { CreateBlogValidations } from "./validations";
 import GenerateId from "@/core/utilities/generate-unique-id";
@@ -30,10 +30,10 @@ export async function POST(request: NextRequest) {
 
   const newBlog: Required<SingleBlogType> = {
     id: GenerateId(10),
-    name: params.name ?? null,
-    category: params.category ?? null,
+    name: params.name ?? "",
+    category: params.category ?? 0,
     authorId: 2012,
-    caption: params.caption ?? null,
+    caption: params.caption ?? "",
     picture: params.picture ?? null,
   };
 

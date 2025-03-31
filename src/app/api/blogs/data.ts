@@ -1,4 +1,4 @@
-import { SingleBlogType } from "./types";
+import { SingleBlogType } from "@/core/services/models/blogs-models";
 
 export const Blogs: SingleBlogType[] = [
   {
